@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <style>
+         header {
+            text-align: center;
+            padding: 10px;
+            }
+         h1 {
+            font-size: 35px; 
+        }
+         h2 {
+           
+            text-align: center;
+             font-family: "Bungee Tint", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+             font-size: 8em;
+        }
+        @keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+h2 {
+    animation: bounceIn 2.8s ease-out infinite;
+}
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('onne.jpeg');
+            background-size: half;
+            background-position: center; /* Centers the background image */
+            background-attachment: fixed; /* Keeps the background fixed while scrolling */
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color:darkslategrey;
+            color: white;
+            padding: 15px;
+        }
+        section {
+             font-size: 30px; 
+            
+        }
+ 
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 50px;
+        }
+
+        nav ul li a {
+            font-size: 30px;
+            color: navajowhite; 
+            text-decoration:none;
+        }
+        
+        main {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+    
+            footer {
+                background-color:transparent;
+
+                color: dimgrey;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                font-size: 15px;
+            }
+        label {
+            font-size: 5em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            font-size: 1.5em;
+            padding: 10px;
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        textarea {
+            height: 400px; /* Adjust height as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Comments</h1>      
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Homepage</a></li>
+                <li><a href="mybiodata.html">My Biodata</a></li>
+                <li><a href="myportfolio.html">My Portfolio</a></li>
+                <li><a href="video.html">My Video</a></li>
+                <li><a href="comments.html">Your Comments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h2>Leave a Comment</h2>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Creepster&family=Eater&family=Faculty+Glyphic&family=Gloria+Hallelujah&family=Pacifico&family=Paytone+One&family=Permanent+Marker&family=Sixtyfour+Convergence&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <form action="submit_comment.php" method="post">
+        <label for="name" style="font-size: 1.5em;">Your Name:</label>
+        <input type="text" id="name" name="name" required style="font-size: 1.5em; padding: 10px; width: 100%; max-width: 400px;"><br><br>
+        
+        <label for="comment" style="font-size: 1.5em;">Your Comment:</label><br>
+        <textarea id="comment" name="comment" rows="6" cols="50" required style="font-size: 1.5em; padding: 10px; width: 100%; max-width: 400px;"></textarea><br><br>
+        
+        <input type="submit" value="Submit" style="font-size: 1.5em; padding: 10px 20px;">
+    </form>
+</main>
+    <footer>
+        <p>&copy; 2024 Grace Personal Page</p>
+    </footer>
+</body>
+</html>
